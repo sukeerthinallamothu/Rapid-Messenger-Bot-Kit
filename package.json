@@ -1,0 +1,14 @@
+{
+  "name": "rapid-messenger-bot-kit",
+  "version": "1.0.0",
+  "description": "A fast development kit for Facebook Messenger bots.",
+  "main": "remote-server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "eventsource": "^1.0.5"
+  },
+  "scripts": {
+    "start": "node remote-server.js"
+  }
+}

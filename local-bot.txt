@@ -1,0 +1,11 @@
+const EventSource = require('eventsource');
+const HEROKU_APP_URL = 'https://your-app.herokuapp.com/webhook';
+
+// Establish connection to remote server
+const eventSource = new EventSource(HEROKU_APP_URL);
+
+eventSource.onmessage = function(event) {
+    let data = JSON.parse(event.data);
+    console.log("Received:", data);
+    // Implement bot logic here
+};
